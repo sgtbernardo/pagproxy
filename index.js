@@ -8,7 +8,6 @@ cors_proxy
   .createServer({
     originWhitelist: [], // Allow all origins
     requireHeader: ["origin", "x-requested-with"],
-    checkRateLimit: checkRateLimit,
     removeHeaders: [
       "cookie",
       "cookie2",
