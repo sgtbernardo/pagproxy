@@ -17,11 +17,11 @@ cors_proxy
       "connect-time",
       "total-route-time",
     ],
-    redirectSameOrigin: true,
-    httpProxyOptions: {
-      // Do not add X-Forwarded-For, etc. headers, because Heroku already adds it.
-      xfwd: false,
-    },
+    // redirectSameOrigin: true,
+    // httpProxyOptions: {
+    //   // Do not add X-Forwarded-For, etc. headers, because Heroku already adds it.
+    //   xfwd: false,
+    // },
   })
   .listen(port, host, function () {
     console.log("Running CORS Anywhere on " + host + ":" + port);
